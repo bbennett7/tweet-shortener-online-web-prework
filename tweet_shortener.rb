@@ -55,6 +55,7 @@ def selective_tweet_shortener(tweets_array)
     else
       tweets_array.collect do |item|
         puts item
+      end
     end
   end
 end
