@@ -63,7 +63,8 @@ def bulk_tweet_shortener (tweets_array)
         short_tweet << "&"
       else
         short_tweet << word
-      puts short_tweet.join(" ")
+      short_tweet.join(" ")
+      return short_tweet
     end
   end
  end
