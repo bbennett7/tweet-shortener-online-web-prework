@@ -41,6 +41,7 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener (tweets_array)
+  short_tweet_array = []
   tweets_array.each do |tweet|
     words = tweet.split(" ")
     short_tweet = []
@@ -63,10 +64,12 @@ def bulk_tweet_shortener (tweets_array)
         short_tweet << "&"
       else
         short_tweet << word
-      short_tweet.join(" ")
-      puts short_tweet
+      short_tweet_array << short_tweet.join(" ")
     end
   end
+ end
+ short_tweet_array. each do |tweet|
+   puts tweet
  end
 end
 
