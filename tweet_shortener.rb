@@ -68,8 +68,6 @@ def bulk_tweet_shortener (tweets_array)
     end
   end
  end
- short_tweet_array. each do |tweet|
-   puts tweet
- end
+ short_tweet_array
 end
 
